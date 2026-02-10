@@ -1,0 +1,501 @@
+<section id="portafolio" class="py-24 relative">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between mb-12">
+      <div>
+        <span
+          class="text-antigravity-cyan font-mono text-sm tracking-wider uppercase"
+          >Nuestro Trabajo</span
+        >
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-white mt-4">
+          Proyectos
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-antigravity-violet to-antigravity-cyan"
+            >Destacados</span
+          >
+        </h2>
+      </div>
+    </div>
+    <!-- Carousel Container Wrapper -->
+    <div class="relative group/carousel">
+      <!-- Navigation Buttons -->
+      <button
+        onclick="scrollPortfolio('left')"
+        class="absolute left-[-20px] top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-antigravity-violet/90 text-white shadow-lg shadow-violet-500/30 flex items-center justify-center opacity-0 group-hover/carousel:opacity-100 transition-all hover:scale-110 hover:bg-antigravity-violet disabled:opacity-0 hidden md:flex backdrop-blur-sm border border-white/10"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          ></path>
+        </svg>
+      </button>
+      <button
+        onclick="scrollPortfolio('right')"
+        class="absolute right-[-20px] top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-antigravity-violet/90 text-white shadow-lg shadow-violet-500/30 flex items-center justify-center opacity-0 group-hover/carousel:opacity-100 transition-all hover:scale-110 hover:bg-antigravity-violet disabled:opacity-0 hidden md:flex backdrop-blur-sm border border-white/10"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </button>
+
+      <!-- Scrollable Container -->
+      <div
+        id="portfolio-container"
+        class="flex overflow-x-auto gap-4 pb-12 snap-x snap-mandatory scrollbar-hide scroll-smooth"
+        onmouseenter="stopAutoScroll()"
+        onmouseleave="startAutoScroll()"
+      >
+        <!-- Project 1: Chakana Ecuador -->
+        <div
+          class="min-w-[calc(50%-8px)] md:min-w-[calc(33.33%-16px)] lg:min-w-[calc(25%-18px)] xl:min-w-[calc(20%-19.2px)] snap-center rounded-3xl overflow-hidden relative group aspect-square bg-antigravity-panel border border-white/5 shadow-2xl shadow-black/50"
+        >
+          <img
+            src="https://i.pinimg.com/1200x/a9/a0/35/a9a035969f426b7f990a236e2df5948f.jpg"
+            alt="Chakana Ecuador"
+            class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110 opacity-80 group-hover:opacity-100 filter blur-[1px] group-hover:blur-0"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-4 sm:p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
+          >
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >HTML5</span
+              >
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >CSS3</span
+              >
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >JS</span
+              >
+            </div>
+            <span
+              class="inline-block px-2 py-0.5 bg-yellow-500/20 text-yellow-400 text-[10px] font-bold rounded-full mb-2 border border-yellow-500/20 backdrop-blur-md"
+              >Tienda</span
+            >
+            <h3
+              class="font-display font-bold text-lg sm:text-xl text-white mb-1 leading-tight"
+            >
+              Chakana
+            </h3>
+            <p
+              class="text-gray-300 text-[10px] sm:text-xs mb-3 line-clamp-2 leading-relaxed"
+            >
+              Alquiler de trajes tradicionales.
+            </p>
+            <a
+              href="https://chakanaecuador.com/"
+              target="_blank"
+              class="inline-flex items-center gap-1.5 text-white text-xs font-semibold hover:text-yellow-400 transition-colors"
+            >
+              Ver Sitio
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m-4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Project 2: Lipoescultura Ecuador -->
+        <div
+          class="min-w-[calc(50%-8px)] md:min-w-[calc(33.33%-16px)] lg:min-w-[calc(25%-18px)] xl:min-w-[calc(20%-19.2px)] snap-center rounded-3xl overflow-hidden relative group aspect-square bg-antigravity-panel border border-white/5 shadow-2xl shadow-black/50"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
+            alt="Lipoescultura Ecuador"
+            class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110 opacity-80 group-hover:opacity-100 filter blur-[1px] group-hover:blur-0"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-4 sm:p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
+          >
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >PHP</span
+              >
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >MySQL</span
+              >
+            </div>
+            <span
+              class="inline-block px-2 py-0.5 bg-green-500/20 text-green-400 text-[10px] font-bold rounded-full mb-2 border border-green-500/20 backdrop-blur-md"
+              >Info</span
+            >
+            <h3
+              class="font-display font-bold text-lg sm:text-xl text-white mb-1 leading-tight"
+            >
+              F' Esthétique
+            </h3>
+            <p
+              class="text-gray-300 text-[10px] sm:text-xs mb-3 line-clamp-2 leading-relaxed"
+            >
+              Servicios médicos estéticos.
+            </p>
+            <a
+              href="https://lipoesculturaecuador.com/"
+              target="_blank"
+              class="inline-flex items-center gap-1.5 text-white text-xs font-semibold hover:text-green-400 transition-colors"
+            >
+              Ver Sitio
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m-4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Project 3: FibraExpress -->
+        <div
+          class="min-w-[calc(50%-8px)] md:min-w-[calc(33.33%-16px)] lg:min-w-[calc(25%-18px)] xl:min-w-[calc(20%-19.2px)] snap-center rounded-3xl overflow-hidden relative group aspect-square bg-antigravity-panel border border-white/5 shadow-2xl shadow-black/50"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800"
+            alt="FibraExpress"
+            class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110 opacity-80 group-hover:opacity-100 filter blur-[1px] group-hover:blur-0"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-4 sm:p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
+          >
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >React</span
+              >
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >Supabase</span
+              >
+            </div>
+            <span
+              class="inline-block px-2 py-0.5 bg-blue-500/20 text-blue-400 text-[10px] font-bold rounded-full mb-2 border border-blue-500/20 backdrop-blur-md"
+              >ISP</span
+            >
+            <h3
+              class="font-display font-bold text-lg sm:text-xl text-white mb-1 leading-tight"
+            >
+              FibraExpress
+            </h3>
+            <p
+              class="text-gray-300 text-[10px] sm:text-xs mb-3 line-clamp-2 leading-relaxed"
+            >
+              Internet de alta velocidad.
+            </p>
+            <a
+              href="https://www.fibraexpress.net.ec/"
+              target="_blank"
+              class="inline-flex items-center gap-1.5 text-white text-xs font-semibold hover:text-blue-400 transition-colors"
+            >
+              Ver Sitio
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m-4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Project 4: Qori Menu -->
+        <div
+          class="min-w-[calc(50%-8px)] md:min-w-[calc(33.33%-16px)] lg:min-w-[calc(25%-18px)] xl:min-w-[calc(20%-19.2px)] snap-center rounded-3xl overflow-hidden relative group aspect-square bg-antigravity-panel border border-white/5 shadow-2xl shadow-black/50"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800"
+            alt="Qori Menu"
+            class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110 opacity-80 group-hover:opacity-100 filter blur-[1px] group-hover:blur-0"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-4 sm:p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
+          >
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >Glide</span
+              >
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >GSheets</span
+              >
+            </div>
+            <span
+              class="inline-block px-2 py-0.5 bg-antigravity-violet/20 text-antigravity-violet text-[10px] font-bold rounded-full mb-2 border border-antigravity-violet/20 backdrop-blur-md"
+              >App</span
+            >
+            <h3
+              class="font-display font-bold text-lg sm:text-xl text-white mb-1 leading-tight"
+            >
+              Qori Menú
+            </h3>
+            <p
+              class="text-gray-300 text-[10px] sm:text-xs mb-3 line-clamp-2 leading-relaxed"
+            >
+              Menú digital interactivo.
+            </p>
+            <a
+              href="https://qorimenu.glide.page/dl/74c4fe"
+              target="_blank"
+              class="inline-flex items-center gap-1.5 text-white text-xs font-semibold hover:text-antigravity-violet transition-colors"
+            >
+              Ver App
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m-4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Project 5: Qori Café System (In Dev) -->
+        <div
+          class="min-w-[calc(50%-8px)] md:min-w-[calc(33.33%-16px)] lg:min-w-[calc(25%-18px)] xl:min-w-[calc(20%-19.2px)] snap-center rounded-3xl overflow-hidden relative group aspect-square bg-antigravity-panel border border-white/5 shadow-2xl shadow-black/50"
+        >
+          <div
+            class="absolute top-4 right-4 z-20 px-3 py-1 bg-black/60 backdrop-blur-md rounded-full border border-white/10 text-[9px] font-bold text-white uppercase tracking-wider shadow-lg"
+          >
+            Dev
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=800"
+            alt="Qori System"
+            class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110 opacity-80 group-hover:opacity-100 filter blur-[1px] group-hover:blur-0"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-4 sm:p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
+          >
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >React</span
+              >
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >Node</span
+              >
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >Postgres</span
+              >
+            </div>
+            <span
+              class="inline-block px-2 py-0.5 bg-antigravity-cyan/20 text-antigravity-cyan text-[10px] font-bold rounded-full mb-2 border border-antigravity-cyan/20 backdrop-blur-md"
+              >SaaS</span
+            >
+            <h3
+              class="font-display font-bold text-lg sm:text-xl text-white mb-1 leading-tight"
+            >
+              Qori System
+            </h3>
+            <p
+              class="text-gray-300 text-[10px] sm:text-xs mb-3 line-clamp-2 leading-relaxed"
+            >
+              Gestión administrativa.
+            </p>
+            <span
+              class="inline-flex items-center gap-1.5 text-gray-500 text-xs font-semibold cursor-not-allowed"
+            >
+              Próximamente
+            </span>
+          </div>
+        </div>
+        <!-- Project 6: Danza System (In Dev) -->
+        <div
+          class="min-w-[calc(50%-8px)] md:min-w-[calc(33.33%-16px)] lg:min-w-[calc(25%-18px)] xl:min-w-[calc(20%-19.2px)] snap-center rounded-3xl overflow-hidden relative group aspect-square bg-antigravity-panel border border-white/5 shadow-2xl shadow-black/50"
+        >
+          <div
+            class="absolute top-4 right-4 z-20 px-3 py-1 bg-black/60 backdrop-blur-md rounded-full border border-white/10 text-[9px] font-bold text-white uppercase tracking-wider shadow-lg"
+          >
+            Dev
+          </div>
+          <img
+            src="https://i.pinimg.com/1200x/93/28/60/932860c4a2d2a9825b22c010a7e10969.jpg"
+            alt="Danza System"
+            class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110 opacity-80 group-hover:opacity-100 filter blur-[1px] group-hover:blur-0"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-4 sm:p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
+          >
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >Vue</span
+              >
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >Laravel</span
+              >
+            </div>
+            <span
+              class="inline-block px-2 py-0.5 bg-pink-500/20 text-pink-400 text-[10px] font-bold rounded-full mb-2 border border-pink-500/20 backdrop-blur-md"
+              >Gestión</span
+            >
+            <h3
+              class="font-display font-bold text-lg sm:text-xl text-white mb-1 leading-tight"
+            >
+              Danza System
+            </h3>
+            <p
+              class="text-gray-300 text-[10px] sm:text-xs mb-3 line-clamp-2 leading-relaxed"
+            >
+              Contratación de danza.
+            </p>
+            <span
+              class="inline-flex items-center gap-1.5 text-gray-500 text-xs font-semibold cursor-not-allowed"
+            >
+              Próximamente
+            </span>
+          </div>
+        </div>
+        <!-- Project 7: Alquiler Trajes (In Dev) -->
+        <div
+          class="min-w-[calc(50%-8px)] md:min-w-[calc(33.33%-16px)] lg:min-w-[calc(25%-18px)] xl:min-w-[calc(20%-19.2px)] snap-center rounded-3xl overflow-hidden relative group aspect-square bg-antigravity-panel border border-white/5 shadow-2xl shadow-black/50"
+        >
+          <div
+            class="absolute top-4 right-4 z-20 px-3 py-1 bg-black/60 backdrop-blur-md rounded-full border border-white/10 text-[9px] font-bold text-white uppercase tracking-wider shadow-lg"
+          >
+            Dev
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&q=80&w=800"
+            alt="Alquiler Trajes"
+            class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110 opacity-80 group-hover:opacity-100 filter blur-[1px] group-hover:blur-0"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-4 sm:p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
+          >
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >Next.js</span
+              >
+              <span
+                class="px-1.5 py-0.5 bg-white/10 backdrop-blur-md rounded text-[9px] font-semibold text-white border border-white/5"
+                >Supabase</span
+              >
+            </div>
+            <span
+              class="inline-block px-2 py-0.5 bg-purple-500/20 text-purple-400 text-[10px] font-bold rounded-full mb-2 border border-purple-500/20 backdrop-blur-md"
+              >App Web</span
+            >
+            <h3
+              class="font-display font-bold text-lg sm:text-xl text-white mb-1 leading-tight"
+            >
+              Alquiler Trajes
+            </h3>
+            <p
+              class="text-gray-300 text-[10px] sm:text-xs mb-3 line-clamp-2 leading-relaxed"
+            >
+              Inventario de trajes.
+            </p>
+            <span
+              class="inline-flex items-center gap-1.5 text-gray-500 text-xs font-semibold cursor-not-allowed"
+            >
+              Próximamente
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Auto Scroll Script -->
+      <script>
+        let autoScrollInterval;
+        const container = document.getElementById("portfolio-container");
+
+        function startAutoScroll() {
+          autoScrollInterval = setInterval(() => {
+            if (
+              container.scrollLeft >=
+              container.scrollWidth - container.clientWidth - 10
+            ) {
+              container.scrollTo({ left: 0, behavior: "smooth" });
+            } else {
+              // Scroll by the width of one card + gap (approx)
+              const cardWidth = container.firstElementChild.offsetWidth + 24;
+              container.scrollBy({ left: cardWidth, behavior: "smooth" });
+            }
+          }, 1800);
+        }
+
+        function stopAutoScroll() {
+          clearInterval(autoScrollInterval);
+        }
+
+        // Start initially
+        document.addEventListener("DOMContentLoaded", startAutoScroll);
+      </script>
+    </div>
+  </div>
+</section>

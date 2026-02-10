@@ -1,0 +1,181 @@
+<header
+  id="main-nav"
+  class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent"
+  data-transparent="true"
+>
+  <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/index.html" class="flex items-center gap-2 group">
+      <img
+        src="/assets/logotipo.png"
+        alt="GuambraWeb Logo"
+        class="w-10 h-10 object-contain rounded-lg bg-white/5 p-1"
+      />
+      <span class="font-display font-bold text-xl tracking-tight text-white"
+        >Guambra<span class="text-antigravity-violet">Web</span></span
+      >
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex items-center gap-6">
+      <a
+        href="/index.html#hero"
+        class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+        >Inicio</a
+      >
+      <a
+        href="/index.html#portafolio"
+        class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+        >Portafolio</a
+      >
+      <a
+        href="/index.html#nosotros"
+        class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+        >Nosotros</a
+      >
+      <a
+        href="/index.html#nuestros-servicios"
+        class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+        >Servicios</a
+      >
+      <a
+        href="/index.html#proceso"
+        class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+        >Proceso</a
+      >
+      <a
+        href="/index.html#testimonios"
+        class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+        >Testimonios</a
+      >
+      <a
+        href="/index.html#faq"
+        class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+        >FAQ</a
+      >
+
+      <!-- Status Indicator -->
+      <div
+        id="status-badge"
+        class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-black/40 border border-white/10 backdrop-blur-md mr-2"
+      >
+        <span id="status-dot" class="w-2 h-2 rounded-full bg-gray-500"></span>
+        <span
+          id="status-text"
+          class="text-[10px] font-bold uppercase tracking-wider text-gray-400"
+          >Cargando...</span
+        >
+      </div>
+
+      <div class="flex items-center gap-3 ml-2">
+        <a
+          href="/personalizador.html"
+          class="px-5 py-2 rounded-full border border-antigravity-violet/50 text-white text-xs font-bold hover:bg-gradient-to-r hover:from-antigravity-violet hover:to-antigravity-cyan transition-all duration-300 hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] flex items-center gap-2 group"
+        >
+          <span>✨ Personalizador Web</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Script for Status -->
+    <script>
+      function updateStatus() {
+        const now = new Date();
+        const hour = now.getHours();
+        const badge = document.getElementById("status-badge");
+        const dot = document.getElementById("status-dot");
+        const text = document.getElementById("status-text");
+
+        if (hour >= 8 && hour < 22) {
+          // Online
+          dot.className =
+            "w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]";
+          text.innerText = "En Línea";
+          text.className =
+            "text-[10px] font-bold uppercase tracking-wider text-green-400";
+          badge.className =
+            "hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 backdrop-blur-md transition-all shadow-[0_0_10px_rgba(34,197,94,0.2)]";
+        } else {
+          // Offline
+          dot.className = "w-2 h-2 rounded-full bg-red-500";
+          text.innerText = "Desconectado";
+          text.className =
+            "text-[10px] font-bold uppercase tracking-wider text-red-400";
+          badge.className =
+            "hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 backdrop-blur-md transition-all opacity-80";
+        }
+      }
+      document.addEventListener("DOMContentLoaded", updateStatus);
+      setInterval(updateStatus, 60000); // Check every minute
+    </script>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="lg:hidden text-white p-2">
+      <svg
+        class="w-7 h-7"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        ></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 bg-black/95 backdrop-blur-xl z-[60] transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-center items-center gap-8 overflow-y-auto"
+>
+  <button
+    id="close-menu-btn"
+    class="absolute top-6 right-6 text-gray-400 hover:text-white"
+  >
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"
+      ></path>
+    </svg>
+  </button>
+
+  <a
+    href="/index.html#hero"
+    class="text-2xl font-bold text-white hover:text-antigravity-cyan transition-colors"
+    >Inicio</a
+  >
+  <a
+    href="/index.html#portafolio"
+    class="text-2xl font-bold text-white hover:text-antigravity-cyan transition-colors"
+    >Portafolio</a
+  >
+  <a
+    href="/index.html#nosotros"
+    class="text-2xl font-bold text-white hover:text-antigravity-cyan transition-colors"
+    >Nosotros</a
+  >
+  <a
+    href="/index.html#nuestros-servicios"
+    class="text-2xl font-bold text-white hover:text-antigravity-cyan transition-colors"
+    >Servicios</a
+  >
+  <a
+    href="/index.html#proceso"
+    class="text-2xl font-bold text-white hover:text-antigravity-cyan transition-colors"
+    >Proceso</a
+  >
+  <a
+    href="/personalizador.html"
+    class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-antigravity-violet to-antigravity-cyan hover:scale-105 transition-transform flex items-center gap-2"
+  >
+    <span>✨ Personalizador Web</span>
+  </a>
+</div>

@@ -1,0 +1,36 @@
+# robots.txt para GuambraWeb
+# Desarrollo Web en Riobamba, Ecuador
+
+# Permitir acceso a todos los bots de búsqueda
+User-agent: *
+Allow: /
+
+# Bloquear acceso a directorios administrativos y archivos sensibles
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+# Permitir específicamente a Googlebot
+User-agent: Googlebot
+Allow: /
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+
+# Permitir a Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Bloquear bots maliciosos conocidos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap
+Sitemap: https://guambraweb.com/sitemap.xml

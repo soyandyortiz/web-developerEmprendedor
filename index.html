@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags Optimizados -->
+    <title>
+      Desarrollo Web en Riobamba | Páginas Web y Software a Medida - GuambraWeb
+    </title>
+    <meta
+      name="description"
+      content="Desarrollo de páginas web, aplicaciones web y software a medida en Riobamba, Ecuador. Soluciones digitales profesionales desde $30. ¡Cotiza gratis tu proyecto web!"
+    />
+    <meta
+      name="keywords"
+      content="desarrollo web riobamba, páginas web riobamba, software riobamba, aplicaciones web ecuador, diseño web riobamba, programador riobamba, desarrollo software ecuador, e-commerce riobamba, sitios web profesionales, páginas web baratas riobamba"
+    />
+    <meta name="author" content="GuambraWeb - Desarrollo Web en Riobamba" />
+    <link rel="canonical" href="https://guambraweb.com/" />
+
+    <!-- Geo Tags para SEO Local -->
+    <meta name="geo.region" content="EC-H" />
+    <meta name="geo.placename" content="Riobamba" />
+    <meta name="geo.position" content="-1.6711;-78.6475" />
+    <meta name="ICBM" content="-1.6711, -78.6475" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://guambraweb.com/" />
+    <meta property="og:site_name" content="GuambraWeb" />
+    <meta property="og:locale" content="es_EC" />
+    <meta
+      property="og:title"
+      content="Desarrollo Web en Riobamba | Páginas Web y Software a Medida"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollo de páginas web profesionales en Riobamba desde $30. Diseño responsive, optimizado para Google, con hosting incluido."
+    />
+    <meta
+      property="og:image"
+      content="https://guambraweb.com/assets/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@guambraweb" />
+    <meta name="twitter:url" content="https://guambraweb.com/" />
+    <meta
+      name="twitter:title"
+      content="Desarrollo Web en Riobamba | GuambraWeb"
+    />
+    <meta
+      name="twitter:description"
+      content="Páginas web profesionales en Riobamba desde $30. ¡Cotiza tu proyecto web gratis!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://guambraweb.com/assets/twitter-image.jpg"
+    />
+
+    <!-- Schema.org JSON-LD para SEO Local -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GuambraWeb",
+        "description": "Desarrollo de páginas web, aplicaciones web y software a medida en Riobamba, Ecuador",
+        "url": "https://guambraweb.com",
+        "telephone": "+593-98-265-0929",
+        "email": "contacto@guambraweb.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Riobamba",
+          "addressRegion": "Chimborazo",
+          "addressCountry": "EC"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-1.6711",
+          "longitude": "-78.6475"
+        },
+        "priceRange": "$$",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Riobamba"
+          },
+          {
+            "@type": "Country",
+            "name": "Ecuador"
+          }
+        ],
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "-1.6711",
+            "longitude": "-78.6475"
+          },
+          "geoRadius": "500000"
+        },
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "sameAs": [
+          "https://www.facebook.com/guambraweb",
+          "https://www.instagram.com/guambraweb"
+        ]
+      }
+    </script>
+
+    <!-- Preconnect para optimización de performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Fonts con display=swap para mejor performance -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/logotipo.png" />
+    <link rel="apple-touch-icon" href="/assets/logotipo.png" />
+
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              antigravity: {
+                bg: "#0a0a0a",
+                violet: "#8b5cf6", // A500 range, tweak for neon
+                cyan: "#06b6d4", // Cyan range
+                dark: "#111111",
+                panel: "#1a1a1a",
+              },
+            },
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            boxShadow: {
+              "neon-violet":
+                "0 0 10px rgba(139, 92, 246, 0.5), 0 0 20px rgba(139, 92, 246, 0.3)",
+              "neon-cyan":
+                "0 0 10px rgba(6, 182, 212, 0.5), 0 0 20px rgba(6, 182, 212, 0.3)",
+            },
+            animation: {
+              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              float: "float 6s ease-in-out infinite",
+              "fade-in-up": "fadeInUp 0.8s ease-out forwards",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body
+    class="bg-antigravity-dark text-white font-body selection:bg-antigravity-violet selection:text-white"
+  >
+    <!-- Header Component -->
+    <load src="src/components/Header.html" />
+
+    <main>
+      <!-- Hero Section -->
+      <load src="src/components/Hero.html" />
+
+      <!-- Portfolio Section -->
+      <load src="src/components/Portfolio.html" />
+
+      <!-- About Section -->
+      <load src="src/components/About.html" />
+
+      <!-- Services Section -->
+      <load src="src/components/Services.html" />
+
+      <!-- Additional Services Section -->
+      <load src="src/components/AdditionalServices.html" />
+
+      <!-- Process Section -->
+      <load src="src/components/Process.html" />
+
+      <!-- Testimonials Section -->
+      <load src="src/components/Testimonials.html" />
+
+      <!-- Why Us Section -->
+      <load src="src/components/WhyUs.html" />
+
+      <!-- FAQ Section -->
+      <load src="src/components/FAQ.html" />
+
+      <!-- Contact Section -->
+      <load src="src/components/Contact.html" />
+    </main>
+
+    <!-- Footer Component -->
+    <load src="src/components/Footer.html" />
+
+    <!-- Modals -->
+    <load src="src/components/ServiceModals.html" />
+    <load src="src/components/LegalModals.html" />
+
+    <!-- Scripts -->
+    <!-- Sistema SEO -->
+    <script type="module" src="/src/seo/index.js"></script>
+
+    <!-- Scripts principales -->
+    <script type="module" src="/src/assets/js/main.js"></script>
+    <script type="module" src="/src/assets/js/active-menu.js"></script>
+    <script type="module" src="/src/assets/js/animations.js"></script>
+    <script type="module" src="/src/assets/js/particles.js"></script>
+  </body>
+</html>

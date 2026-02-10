@@ -1,0 +1,168 @@
+<!-- Terms Modal -->
+<div id="terms-modal" class="fixed inset-0 z-[100] hidden">
+  <div
+    class="absolute inset-0 bg-black/80 backdrop-blur-sm"
+    onclick="closeModal('terms-modal')"
+  ></div>
+  <div
+    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl bg-antigravity-panel border border-white/10 rounded-3xl p-8 shadow-2xl transform transition-all scale-100 max-h-[80vh] overflow-y-auto custom-scrollbar"
+  >
+    <button
+      onclick="closeModal('terms-modal')"
+      class="absolute top-4 right-4 text-gray-400 hover:text-white sticky"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        ></path>
+      </svg>
+    </button>
+    <h3 class="font-display font-bold text-2xl text-white mb-6">
+      Términos y Condiciones
+    </h3>
+    <div class="prose prose-invert prose-sm max-w-none text-gray-300 space-y-4">
+      <p>
+        Bienvenido a GuambraWeb. Al contratar nuestros servicios, aceptas los
+        siguientes términos:
+      </p>
+
+      <h4 class="font-bold text-white">1. Servicios y Pagos</h4>
+      <p>
+        Para iniciar cualquier proyecto, se requiere un anticipo del 50% del
+        valor total acordado. El 50% restante se cancelará contra la entrega
+        final del proyecto satisfactoria. Los pagos no son reembolsables una vez
+        iniciado el trabajo.
+      </p>
+
+      <h4 class="font-bold text-white">2. Tiempos de Entrega</h4>
+      <p>
+        Los tiempos de entrega son estimados y pueden variar según la
+        complejidad del proyecto y la rapidez con la que el cliente entregue la
+        información necesaria (textos, imágenes, accesos). GuambraWeb no se hace
+        responsable por retrasos causados por el cliente.
+      </p>
+
+      <h4 class="font-bold text-white">3. Revisiones y Cambios</h4>
+      <p>
+        Se incluyen dos rondas de revisiones y ajustes menores antes de la
+        entrega final. Cambios estructurales o funcionales no contemplados en la
+        cotización inicial tendrán un costo adicional.
+      </p>
+
+      <h4 class="font-bold text-white">4. Propiedad Intelectual</h4>
+      <p>
+        Una vez cancelado el valor total del proyecto, el cliente obtiene la
+        propiedad intelectual sobre el diseño y el código fuente del sitio web o
+        aplicación, a excepción de librerías de terceros o código propietario de
+        GuambraWeb reutilizable.
+      </p>
+
+      <h4 class="font-bold text-white">5. Garantía y Soporte</h4>
+      <p>
+        Ofrecemos una garantía de funcionamiento de 30 días posteriores a la
+        entrega para corregir cualquier error técnico imputable a nuestro
+        desarrollo. El soporte posterior se regirá por un contrato de
+        mantenimiento si el cliente lo desea.
+      </p>
+    </div>
+    <div class="mt-8 flex justify-end">
+      <button
+        onclick="closeModal('terms-modal')"
+        class="px-6 py-2 rounded-xl bg-antigravity-cyan text-black font-bold hover:bg-cyan-400 transition-colors"
+      >
+        Entendido
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Privacy Modal -->
+<div id="privacy-modal" class="fixed inset-0 z-[100] hidden">
+  <div
+    class="absolute inset-0 bg-black/80 backdrop-blur-sm"
+    onclick="closeModal('privacy-modal')"
+  ></div>
+  <div
+    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl bg-antigravity-panel border border-white/10 rounded-3xl p-8 shadow-2xl transform transition-all scale-100 max-h-[80vh] overflow-y-auto custom-scrollbar"
+  >
+    <button
+      onclick="closeModal('privacy-modal')"
+      class="absolute top-4 right-4 text-gray-400 hover:text-white sticky"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        ></path>
+      </svg>
+    </button>
+    <h3 class="font-display font-bold text-2xl text-white mb-6">
+      Política de Privacidad
+    </h3>
+    <div class="prose prose-invert prose-sm max-w-none text-gray-300 space-y-4">
+      <p>
+        En GuambraWeb, respetamos tu privacidad y nos comprometemos a proteger
+        tus datos personales:
+      </p>
+
+      <h4 class="font-bold text-white">1. Recopilación de Datos</h4>
+      <p>
+        Recopilamos información básica necesaria para la prestación de nuestros
+        servicios, como nombres, correos electrónicos, números de teléfono y
+        datos de facturación. Esta información es proporcionada voluntariamente
+        por ti a través de nuestros formularios o contacto directo.
+      </p>
+
+      <h4 class="font-bold text-white">2. Uso de la Información</h4>
+      <p>
+        Utilizamos tus datos exclusivamente para comunicarnos contigo sobre tu
+        proyecto, enviarte cotizaciones, facturas y brindarte soporte técnico.
+        No compartimos ni vendemos tu información a terceros.
+      </p>
+
+      <h4 class="font-bold text-white">3. Seguridad</h4>
+      <p>
+        Implementamos medidas de seguridad digitales y físicas para proteger tu
+        información contra acceso no autorizado, alteración o divulgación.
+      </p>
+
+      <h4 class="font-bold text-white">4. Cookies</h4>
+      <p>
+        Nuestro sitio web utiliza cookies para mejorar tu experiencia de
+        navegación y analizar el tráfico web. Puedes configurar tu navegador
+        para rechazar las cookies, aunque esto podría limitar algunas
+        funcionalidades.
+      </p>
+
+      <h4 class="font-bold text-white">5. Derechos ARCO</h4>
+      <p>
+        Tienes derecho a Acceder, Rectificar, Cancelar u Oponerte al tratamiento
+        de tus datos personales. Para ejercer estos derechos, contáctanos a
+        guambraweb@gmail.com.
+      </p>
+    </div>
+    <div class="mt-8 flex justify-end">
+      <button
+        onclick="closeModal('privacy-modal')"
+        class="px-6 py-2 rounded-xl bg-antigravity-cyan text-black font-bold hover:bg-cyan-400 transition-colors"
+      >
+        Entendido
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+{
+  "name": "guambraweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seo:sitemap": "node src/seo/generate-sitemap.js",
+    "seo:validate": "node -e \"import('./src/seo/index.js').then(m => m.seoManager.generateFullReport())\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vite": "^7.3.1",
+    "vite-plugin-html-inject": "^1.1.2"
+  },
+  "devDependencies": {}
+}
